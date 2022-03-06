@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:meu_site/components/navigation/appBar_link.dart';
-import 'package:meu_site/constant/app_links.dart';
+import 'package:meu_site/constant/app_navigation_links.dart';
 
 class NavigationAppBar extends StatelessWidget implements PreferredSizeWidget {
   const NavigationAppBar({Key? key}) : super(key: key);
@@ -12,7 +12,7 @@ class NavigationAppBar extends StatelessWidget implements PreferredSizeWidget {
       centerTitle: true,
       title: Row(
           mainAxisSize: MainAxisSize.min,
-          children: appLinks
+          children: appNavigationLinks
               .map(
                 (appLink) => AppBarLink(
                   linkText: appLink,

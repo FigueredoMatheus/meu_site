@@ -1,4 +1,4 @@
-List<String> appLinks = [
+List<String> appNavigationLinks = [
   'Início',
   'Sobre mim',
   'Habilidades',
