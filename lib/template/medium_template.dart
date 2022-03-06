@@ -5,6 +5,8 @@ class MediumTemplate extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column();
+    return Container(
+      color: Colors.white,
+    );
   }
 }

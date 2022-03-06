@@ -17,7 +17,7 @@ class _AppBarLinkState extends State<AppBarLink> {
     return Container(
       margin: widget.linkText == 'Projetos'
           ? null
-          : const EdgeInsets.only(right: 60),
+          : const EdgeInsets.only(right: 30),
       child: InkWell(
         splashColor: Colors.transparent,
         highlightColor: Colors.transparent,
@@ -30,7 +30,7 @@ class _AppBarLinkState extends State<AppBarLink> {
           widget.linkText,
           style: GoogleFonts.sarabun(
             color: _isHovering ? Colors.black : Colors.white,
-            fontSize: 27,
+            fontSize: 23,
             fontWeight: FontWeight.bold,
           ),
         ),
