@@ -5,11 +5,11 @@ import 'package:meu_site/components/social_media_icon.dart';
 import 'package:meu_site/constant/constant_spacing.dart';
 
 class FooterPage extends StatelessWidget {
-  final double screenWidth;
-  const FooterPage({Key? key, required this.screenWidth}) : super(key: key);
+  const FooterPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    final screenWidth = MediaQuery.of(context).size.width;
     return Container(
       margin: const EdgeInsets.symmetric(vertical: sectionsSpace),
       child: Column(

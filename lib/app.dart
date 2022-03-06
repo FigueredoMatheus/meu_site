@@ -1,13 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:meu_site/components/navigation/appBar_link.dart';
-
 import 'package:meu_site/components/navigation/navigation_bar.dart';
 import 'package:meu_site/components/navigation/drawer/navigation_drawer.dart';
-import 'package:meu_site/constant/app_links.dart';
-
-import 'package:meu_site/template/large_template.dart';
-import 'package:meu_site/template/medium_template.dart';
-import 'package:meu_site/template/small_template.dart';
+import 'package:meu_site/constant/list_views.dart';
+import 'package:meu_site/controllers/navigation_controller.dart';
+import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
 class App extends StatefulWidget {
   const App({Key? key}) : super(key: key);
@@ -17,19 +13,31 @@ class App extends StatefulWidget {
 }
 
 class _AppState extends State<App> {
+  final itemListener = ItemPositionsListener.create();
+  final navigationController = NavigationController();
+
+  @override
+  void initState() {
+    super.initState();
+    itemListener.itemPositions.addListener(
+      () {
+        itemListener.itemPositions.value.where((item) {
+          final isTopVisible =
+              item.itemLeadingEdge >= -0.6 && item.itemLeadingEdge <= 0.2;
+
+          return isTopVisible;
+        }).map(
+          (item) {
+            navigationController.setCurrentPage(item.index);
+          },
+        ).toList();
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
-
-    Widget getTemplate() {
-      if (screenWidth <= 650) {
-        return SmallTemplate();
-      } else if (screenWidth <= 950) {
-        return const MediumTemplate();
-      } else {
-        return const LargeTemplate();
-      }
-    }
 
     return Scaffold(
       appBar: screenWidth <= 650
@@ -50,7 +58,14 @@ class _AppState extends State<App> {
             ],
           ),
         ),
-        child: getTemplate(),
+        child: ScrollablePositionedList.builder(
+          itemCount: 5,
+          itemPositionsListener: itemListener,
+          itemScrollController: navigationController.scrollController,
+          itemBuilder: (context, index) {
+            return listViews[index];
+          },
+        ),
       ),
     );
   }
