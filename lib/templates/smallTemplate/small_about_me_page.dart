@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:meu_site/constant/constant_spacing.dart';
+import 'package:meu_site/constants/constant_spacing.dart';
 
 class SmallAboutMePage extends StatelessWidget {
   final double screenWidth;

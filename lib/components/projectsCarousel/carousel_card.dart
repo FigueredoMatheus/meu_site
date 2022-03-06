@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:meu_site/constant/projects_description.dart';
+import 'package:meu_site/constants/projects_description.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
 class CarouselCard extends StatefulWidget {
@@ -18,7 +18,7 @@ class _CarouselCardState extends State<CarouselCard> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      constraints: BoxConstraints(maxHeight: 735),
+      constraints: const BoxConstraints(maxHeight: 735),
       width: widget.screenWidth * 0.83,
       height: widget.screenWidth * 1.32,
       padding: const EdgeInsets.all(10),

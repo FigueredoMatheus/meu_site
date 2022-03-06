@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:meu_site/components/initialPage/card.dart';
 import 'package:meu_site/components/initialPage/profile.dart';
-import 'package:meu_site/constant/constant_spacing.dart';
+import 'package:meu_site/constants/constant_spacing.dart';
 
 class SmallInitalPage extends StatelessWidget {
   final double screenWidth;

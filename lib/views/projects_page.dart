@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:meu_site/template/smallTemplate/small_projects_page.dart';
+import 'package:meu_site/templates/smallTemplate/small_projects_page.dart';
 
 class ProjectsPage extends StatelessWidget {
   const ProjectsPage({Key? key}) : super(key: key);

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:meu_site/components/skills/skill_card.dart';
-import 'package:meu_site/constant/constant_spacing.dart';
+import 'package:meu_site/constants/constant_spacing.dart';
 
-import '../../constant/skills.dart';
+import '../../constants/skills.dart';
 
 class SmallSkillsPage extends StatelessWidget {
   final double screenWidth;

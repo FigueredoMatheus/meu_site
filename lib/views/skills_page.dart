@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:meu_site/template/smallTemplate/small_skills_page.dart';
+import 'package:meu_site/templates/smallTemplate/small_skills_page.dart';
 
 class SkillsPage extends StatelessWidget {
   const SkillsPage({Key? key}) : super(key: key);

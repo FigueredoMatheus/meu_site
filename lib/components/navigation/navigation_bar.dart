@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:meu_site/components/navigation/appBar_link.dart';
-import 'package:meu_site/constant/app_navigation_links.dart';
+import 'package:meu_site/constants/app_navigation_links.dart';
 
 class NavigationAppBar extends StatelessWidget implements PreferredSizeWidget {
   const NavigationAppBar({Key? key}) : super(key: key);
@@ -23,23 +23,5 @@ class NavigationAppBar extends StatelessWidget implements PreferredSizeWidget {
   }
 
   @override
-  Size get preferredSize => Size(double.infinity, 50);
+  Size get preferredSize => const Size(double.infinity, 50);
 }
-
-/*
-
- AppBar(
-        backgroundColor: const Color(0xFF1E2A50),
-        centerTitle: true,
-        title: Row(
-            mainAxisSize: MainAxisSize.min,
-            children: appLinks
-                .map(
-                  (appLink) => AppBarLink(
-                    linkText: appLink,
-                  ),
-                )
-                .toList()),
-      )
-
-*/

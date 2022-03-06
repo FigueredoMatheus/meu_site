@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:meu_site/template/smallTemplate/small_initial_page.dart';
+import 'package:meu_site/templates/smallTemplate/small_initial_page.dart';
 
 class InitialPage extends StatelessWidget {
   const InitialPage({Key? key}) : super(key: key);

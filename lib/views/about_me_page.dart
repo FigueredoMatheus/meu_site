@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:meu_site/template/smallTemplate/small_about_me_page.dart';
+import 'package:meu_site/templates/smallTemplate/small_about_me_page.dart';
 
 class AboutMePage extends StatelessWidget {
   const AboutMePage({Key? key}) : super(key: key);
