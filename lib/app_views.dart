@@ -5,7 +5,7 @@ import 'package:meu_site/views/initial_page.dart';
 import 'package:meu_site/views/projects_page.dart';
 import 'package:meu_site/views/skills_page.dart';
 
-List<Widget> listViews = [
+List<Widget> appViews = [
   const InitialPage(),
   const AboutMePage(),
   const SkillsPage(),

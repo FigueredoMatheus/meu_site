@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:meu_site/components/navigation/navigation_bar.dart';
 import 'package:meu_site/components/navigation/drawer/navigation_drawer.dart';
-import 'package:meu_site/constant/list_views.dart';
+import 'package:meu_site/app_views.dart';
 import 'package:meu_site/controllers/navigation_controller.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
@@ -63,7 +63,7 @@ class _AppState extends State<App> {
           itemPositionsListener: itemListener,
           itemScrollController: navigationController.scrollController,
           itemBuilder: (context, index) {
-            return listViews[index];
+            return appViews[index];
           },
         ),
       ),
