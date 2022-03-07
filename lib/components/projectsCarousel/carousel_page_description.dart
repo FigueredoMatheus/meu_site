@@ -17,7 +17,6 @@ class CarouselDecription extends StatelessWidget {
       );
     }
 
-    print('screenWidth: $screenWidth');
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [

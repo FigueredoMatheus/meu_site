@@ -38,7 +38,7 @@ class _AppState extends State<App> {
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
-
+    print('screenWidth: $screenWidth');
     return Scaffold(
       appBar: screenWidth <= 650
           ? AppBar(

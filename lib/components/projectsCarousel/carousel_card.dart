@@ -20,7 +20,7 @@ class _CarouselCardState extends State<CarouselCard> {
     return Container(
       constraints: const BoxConstraints(maxHeight: 735),
       width: widget.screenWidth * 0.83,
-      height: widget.screenWidth * 1.32,
+      height: widget.screenWidth * 1.35,
       padding: const EdgeInsets.all(10),
       decoration: BoxDecoration(
         color: Theme.of(context).primaryColor,

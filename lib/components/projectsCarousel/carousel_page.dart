@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:meu_site/components/projectsCarousel/carousel_page_description.dart';
 
 class SmallCarouselPage extends StatelessWidget {
@@ -13,12 +14,10 @@ class SmallCarouselPage extends StatelessWidget {
     return LayoutBuilder(
       builder: ((context, constraints) {
         return Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Center(
               child: Container(
-                // width: constraints.maxWidth * 0.70,
-                // height: constraints.maxWidth * 0.70,
                 decoration: BoxDecoration(
                   border: Border.all(color: Colors.white, width: 1),
                 ),
@@ -28,18 +27,32 @@ class SmallCarouselPage extends StatelessWidget {
               ),
             ),
             const SizedBox(
+              height: 5,
+            ),
+            Text(
+              'Website',
+              style: GoogleFonts.sanchez(
+                fontSize: 14,
+                color: Colors.white,
+                height: 1.4,
+              ),
+            ),
+            const SizedBox(
               height: 15,
             ),
             CarouselDecription(project: project),
             const Spacer(),
-            ElevatedButton(
-              onPressed: () {},
-              style: ElevatedButton.styleFrom(
-                primary: Colors.white,
-                onPrimary: Colors.black,
+            Align(
+              alignment: Alignment.centerLeft,
+              child: ElevatedButton(
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.white,
+                  onPrimary: Colors.black,
+                ),
+                child: const Text('Saiba mais'),
               ),
-              child: const Text('Saiba mais'),
-            ),
+            )
           ],
         );
       }),
