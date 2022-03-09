@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:meu_site/constants/constant_spacing.dart';
 
-class SmallAboutMePage extends StatelessWidget {
+class AboutMeTemplate extends StatelessWidget {
   final double screenWidth;
-  const SmallAboutMePage({Key? key, required this.screenWidth})
+  const AboutMeTemplate({Key? key, required this.screenWidth})
       : super(key: key);
 
   @override
@@ -23,7 +23,7 @@ class SmallAboutMePage extends StatelessWidget {
           ),
           const SizedBox(height: titleContextSpace),
           SizedBox(
-            width: screenWidth * 0.833 > 550 ? 550 : screenWidth * 0.833,
+            width: screenWidth * 0.833 > 750 ? 750 : screenWidth * 0.833,
             child: SelectableText(
               'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
               textAlign: TextAlign.justify,

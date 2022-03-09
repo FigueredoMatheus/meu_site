@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:meu_site/components/projectsCarousel/carousel_page.dart';
 import 'package:meu_site/constants/projects_description.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
 class CarouselCard extends StatefulWidget {
   final double screenWidth;
-  const CarouselCard({Key? key, required this.screenWidth}) : super(key: key);
+  final bool isSmall;
+  const CarouselCard({
+    Key? key,
+    required this.screenWidth,
+    required this.isSmall,
+  }) : super(key: key);
 
   @override
   State<CarouselCard> createState() => _CarouselCardState();
@@ -19,8 +25,8 @@ class _CarouselCardState extends State<CarouselCard> {
   Widget build(BuildContext context) {
     return Container(
       constraints: const BoxConstraints(maxHeight: 735),
-      width: widget.screenWidth * 0.83,
-      height: widget.screenWidth * 1.35,
+      width: widget.screenWidth * 0.85,
+      height: widget.screenWidth * 1.40,
       padding: const EdgeInsets.all(10),
       decoration: BoxDecoration(
         color: Theme.of(context).primaryColor,
@@ -41,7 +47,14 @@ class _CarouselCardState extends State<CarouselCard> {
                 height: constraints.maxHeight * 0.90,
                 width: constraints.maxWidth,
                 child: CarouselSlider(
-                  items: projectsPage,
+                  items: projectsDescription
+                      .map(
+                        (project) => CarouselPage(
+                          project: project,
+                          isSmall: widget.isSmall,
+                        ),
+                      )
+                      .toList(),
                   options: CarouselOptions(
                     enlargeCenterPage: false,
                     viewportFraction: 1.0,
@@ -70,7 +83,8 @@ class _CarouselCardState extends State<CarouselCard> {
                       color: Colors.white,
                     ),
                     Row(
-                        children: projectsPage.asMap().entries.map((entry) {
+                        children:
+                            projectsDescription.asMap().entries.map((entry) {
                       return InkWell(
                         onTap: () => _controller.animateToPage(entry.key),
                         child: Container(

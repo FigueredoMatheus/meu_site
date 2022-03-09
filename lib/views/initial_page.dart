@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:meu_site/templates/smallTemplate/small_initial_page.dart';
+import 'package:meu_site/templates/initial_template.dart';
 
 class InitialPage extends StatelessWidget {
   const InitialPage({Key? key}) : super(key: key);
@@ -10,6 +10,8 @@ class InitialPage extends StatelessWidget {
 
     Widget getTemplate() {
       if (screenWidth <= 650) {
+        return SmallInitalPage(screenWidth: screenWidth);
+      } else if (screenWidth <= 950) {
         return SmallInitalPage(screenWidth: screenWidth);
       }
       return Container(color: Colors.red);

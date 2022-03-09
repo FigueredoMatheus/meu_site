@@ -3,10 +3,14 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:meu_site/components/projectsCarousel/carousel_card.dart';
 import 'package:meu_site/constants/constant_spacing.dart';
 
-class SmallProjectsPage extends StatelessWidget {
+class ProjectsTemplate extends StatelessWidget {
   final double screenWidth;
-  const SmallProjectsPage({Key? key, required this.screenWidth})
-      : super(key: key);
+  final bool isSmall;
+  const ProjectsTemplate({
+    Key? key,
+    required this.screenWidth,
+    required this.isSmall,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -25,6 +29,7 @@ class SmallProjectsPage extends StatelessWidget {
           const SizedBox(height: titleContextSpace),
           CarouselCard(
             screenWidth: screenWidth,
+            isSmall: isSmall,
           ),
           const SizedBox(
             height: sectionsSpace,

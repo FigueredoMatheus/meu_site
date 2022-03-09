@@ -3,12 +3,21 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:meu_site/components/skills/skill_card.dart';
 import 'package:meu_site/constants/constant_spacing.dart';
 
-import '../../constants/skills.dart';
+import '../constants/skills.dart';
 
-class SmallSkillsPage extends StatelessWidget {
-  final double screenWidth;
-  const SmallSkillsPage({Key? key, required this.screenWidth})
-      : super(key: key);
+class SkillTemplate extends StatelessWidget {
+  final double skillContainerHeight;
+  final double skillContainerWidth;
+  final double mainContainerWidth;
+  final double titleTextFontSize;
+
+  const SkillTemplate({
+    Key? key,
+    required this.skillContainerHeight,
+    required this.skillContainerWidth,
+    required this.mainContainerWidth,
+    required this.titleTextFontSize,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +29,7 @@ class SmallSkillsPage extends StatelessWidget {
           SelectableText(
             'Habilidades',
             style: GoogleFonts.sarabun(
-              fontSize: screenWidth * 0.0833 > 45 ? 45 : screenWidth * 0.0833,
+              fontSize: titleTextFontSize,
               fontWeight: FontWeight.bold,
               color: Colors.white,
             ),
@@ -29,7 +38,7 @@ class SmallSkillsPage extends StatelessWidget {
             height: titleContextSpace,
           ),
           SizedBox(
-            width: 300,
+            width: mainContainerWidth,
             child: Wrap(
               alignment: WrapAlignment.center,
               spacing: 20,
@@ -37,10 +46,9 @@ class SmallSkillsPage extends StatelessWidget {
               children: skillsList.map((skill) {
                 return SkillCard(
                   skill: skill,
-                  containerHeight: 145,
-                  containerWidth:
-                      screenWidth * 0.347 > 140 ? 140 : screenWidth * 0.347,
-                  logoSize: screenWidth * 0.139 > 55 ? 55 : screenWidth * 0.139,
+                  containerHeight: skillContainerHeight,
+                  containerWidth: skillContainerWidth,
+                  logoSize: 60,
                   titleFontSize: 22,
                 );
               }).toList(),

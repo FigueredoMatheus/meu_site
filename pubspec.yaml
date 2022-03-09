@@ -67,8 +67,7 @@ flutter:
   assets:
     - assets/
     - assets/skills logo/
-    - assets/ayan engenharia/
-    - assets/nix app/
+    - assets/projects/
     
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
