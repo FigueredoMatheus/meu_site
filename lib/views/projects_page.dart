@@ -11,12 +11,18 @@ class ProjectsPage extends StatelessWidget {
       if (screenWidth <= 650) {
         return ProjectsTemplate(
           screenWidth: screenWidth,
-          isSmall: true,
+          projectContainerWidth:
+              screenWidth * 0.83 > 550 ? 550 : screenWidth * 0.83,
+          iconSize: 30,
+          textFontSize: screenWidth * 0.0333 > 16 ? 16 : screenWidth * 0.0333,
         );
       } else if (screenWidth <= 950) {
         return ProjectsTemplate(
           screenWidth: screenWidth,
-          isSmall: false,
+          projectContainerWidth:
+              screenWidth * 0.83 > 550 ? 550 : screenWidth * 0.83,
+          iconSize: 30,
+          textFontSize: screenWidth * 0.0333 > 16 ? 16 : screenWidth * 0.0333,
         );
       }
       return Container(color: Colors.red);

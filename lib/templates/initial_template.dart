@@ -32,7 +32,7 @@ class SmallInitalPage extends StatelessWidget {
           ),
           Container(
             width: screenWidth,
-            height: 10,
+            height: 1,
             color: Colors.white,
           ),
         ],

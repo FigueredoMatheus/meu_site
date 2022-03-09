@@ -1,15 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:meu_site/components/projectsCarousel/carousel_card.dart';
+import 'package:meu_site/components/projectsPage/project_card.dart';
 import 'package:meu_site/constants/constant_spacing.dart';
 
 class ProjectsTemplate extends StatelessWidget {
   final double screenWidth;
-  final bool isSmall;
+  final double projectContainerWidth;
+  final double iconSize;
+  final double textFontSize;
   const ProjectsTemplate({
     Key? key,
     required this.screenWidth,
-    required this.isSmall,
+    required this.projectContainerWidth,
+    required this.iconSize,
+    required this.textFontSize,
   }) : super(key: key);
 
   @override
@@ -27,16 +31,17 @@ class ProjectsTemplate extends StatelessWidget {
             ),
           ),
           const SizedBox(height: titleContextSpace),
-          CarouselCard(
-            screenWidth: screenWidth,
-            isSmall: isSmall,
+          ProjectCard(
+            projectContainerWidth: projectContainerWidth,
+            iconSize: iconSize,
+            textFontSize: textFontSize,
           ),
           const SizedBox(
             height: sectionsSpace,
           ),
           Container(
             width: screenWidth,
-            height: 10,
+            height: 1,
             color: Colors.white,
           ),
         ],

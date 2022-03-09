@@ -68,6 +68,10 @@ flutter:
     - assets/
     - assets/skills logo/
     - assets/projects/
+    - assets/projects/Ecological Footprint/
+    - assets/projects/Engineer site/
+    - assets/projects/Nix app/
+
     
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
