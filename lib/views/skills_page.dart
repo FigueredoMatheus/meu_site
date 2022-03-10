@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:meu_site/templates/skills_template.dart';
+import 'package:meu_site/templates/skills_page_template.dart';
 
 class SkillsPage extends StatelessWidget {
   const SkillsPage({Key? key}) : super(key: key);
@@ -9,7 +9,7 @@ class SkillsPage extends StatelessWidget {
     final screenWidth = MediaQuery.of(context).size.width;
     Widget getTemplate() {
       if (screenWidth <= 650) {
-        return SkillTemplate(
+        return SkillPageTemplate(
           mainContainerWidth: 300,
           skillContainerHeight: 145,
           skillContainerWidth:
@@ -18,7 +18,7 @@ class SkillsPage extends StatelessWidget {
               screenWidth * 0.0833 > 45 ? 45 : screenWidth * 0.0833,
         );
       } else if (screenWidth <= 950) {
-        return const SkillTemplate(
+        return const SkillPageTemplate(
           mainContainerWidth: 470,
           skillContainerHeight: 160,
           skillContainerWidth: 140,

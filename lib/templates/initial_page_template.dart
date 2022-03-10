@@ -3,9 +3,9 @@ import 'package:meu_site/components/initialPage/card.dart';
 import 'package:meu_site/components/initialPage/profile.dart';
 import 'package:meu_site/constants/constant_spacing.dart';
 
-class SmallInitalPage extends StatelessWidget {
+class InitalPageTemplate extends StatelessWidget {
   final double screenWidth;
-  const SmallInitalPage({Key? key, required this.screenWidth})
+  const InitalPageTemplate({Key? key, required this.screenWidth})
       : super(key: key);
 
   @override

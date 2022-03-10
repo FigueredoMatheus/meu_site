@@ -3,12 +3,12 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:meu_site/components/projectsPage/project_card.dart';
 import 'package:meu_site/constants/constant_spacing.dart';
 
-class ProjectsTemplate extends StatelessWidget {
+class ProjectsPageTemplate extends StatelessWidget {
   final double screenWidth;
   final double projectContainerWidth;
   final double iconSize;
   final double textFontSize;
-  const ProjectsTemplate({
+  const ProjectsPageTemplate({
     Key? key,
     required this.screenWidth,
     required this.projectContainerWidth,

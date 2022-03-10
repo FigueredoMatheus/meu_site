@@ -5,13 +5,13 @@ import 'package:meu_site/constants/constant_spacing.dart';
 
 import '../constants/skills.dart';
 
-class SkillTemplate extends StatelessWidget {
+class SkillPageTemplate extends StatelessWidget {
   final double skillContainerHeight;
   final double skillContainerWidth;
   final double mainContainerWidth;
   final double titleTextFontSize;
 
-  const SkillTemplate({
+  const SkillPageTemplate({
     Key? key,
     required this.skillContainerHeight,
     required this.skillContainerWidth,

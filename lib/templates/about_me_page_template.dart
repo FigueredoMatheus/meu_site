@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:meu_site/constants/constant_spacing.dart';
 
-class AboutMeTemplate extends StatelessWidget {
+class AboutMePageTemplate extends StatelessWidget {
   final double screenWidth;
-  const AboutMeTemplate({Key? key, required this.screenWidth})
+  const AboutMePageTemplate({Key? key, required this.screenWidth})
       : super(key: key);
 
   @override
