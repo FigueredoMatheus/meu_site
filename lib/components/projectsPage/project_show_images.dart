@@ -11,8 +11,8 @@ class ProjectShowImages extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 80,
-      height: 25,
+      width: 85,
+      height: 28,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
           primary: Colors.white,

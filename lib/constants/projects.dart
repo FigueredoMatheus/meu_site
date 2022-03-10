@@ -9,7 +9,7 @@ List<Map<String, dynamic>> projects = [
     ],
     'accessLink': ['play.google.com/store/apps/details?id=com.guinter.nix'],
     'description':
-        'Desenvolvimento de um aplicativo leitor de livros interativos para android utilizando Flutter com Firebase(Auth, Cloud Firestore, Storage, Dynamic Links e Google Admob), possui login com Google, Facebook e Email.  Além disso, foi utilizado o Scrum para trabalho em equipe e Git para controle de versões.',
+        'Desenvolvimento de um aplicativo leitor de livros interativos para android utilizando Flutter com Firebase (Auth, Cloud Firestore, Storage, Dynamic Links e Google Admob), possui login com Google, Facebook e Email.  Além disso, foi utilizado o Scrum para trabalho em equipe e Git para controle de versões.',
   },
   {
     'isApp': false,

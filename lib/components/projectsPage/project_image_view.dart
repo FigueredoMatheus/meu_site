@@ -80,7 +80,7 @@ class _ImagesViewState extends State<ImagesView> {
                 String imagePath = widget.imagesList[index];
 
                 return PhotoViewGalleryPageOptions(
-                  imageProvider: NetworkImage(imagePath),
+                  imageProvider: AssetImage(imagePath),
                   minScale: PhotoViewComputedScale.contained,
                 );
               },
