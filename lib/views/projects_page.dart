@@ -13,7 +13,7 @@ class ProjectsPage extends StatelessWidget {
           screenWidth: screenWidth,
           projectContainerWidth:
               screenWidth * 0.83 > 550 ? 550 : screenWidth * 0.83,
-          iconSize: 30,
+          iconSize: 40,
           textFontSize: screenWidth * 0.0333 > 16 ? 16 : screenWidth * 0.0333,
         );
       } else if (screenWidth <= 950) {

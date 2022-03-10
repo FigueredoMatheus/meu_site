@@ -26,13 +26,12 @@ class ProjectCardContent extends StatelessWidget {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        Container(
-          margin: const EdgeInsets.only(right: 15),
-          width: iconSize + 20,
+        Padding(
+          padding: const EdgeInsets.fromLTRB(5, 0, 20, 0),
           child: Icon(
             project['isApp'] ? Icons.smartphone : Icons.language,
             size: iconSize,
-            color: Color.fromARGB(129, 0, 0, 0),
+            color: const Color.fromARGB(129, 0, 0, 0),
           ),
         ),
         Expanded(
