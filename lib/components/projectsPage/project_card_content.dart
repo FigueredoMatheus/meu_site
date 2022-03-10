@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:meu_site/components/projectsPage/project_show_images.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class ProjectCardContent extends StatelessWidget {
@@ -34,6 +35,7 @@ class ProjectCardContent extends StatelessWidget {
         ),
         Expanded(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
                 project['description'],
@@ -73,6 +75,12 @@ class ProjectCardContent extends StatelessWidget {
                     ),
                   ),
                 ),
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              ProjectShowImages(
+                imagesList: project['imgList'],
               ),
             ],
           ),
