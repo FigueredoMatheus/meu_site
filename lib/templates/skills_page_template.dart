@@ -54,9 +54,6 @@ class SkillPageTemplate extends StatelessWidget {
               }).toList(),
             ),
           ),
-          const SizedBox(
-            height: titleContextSpace,
-          ),
         ],
       ),
     );

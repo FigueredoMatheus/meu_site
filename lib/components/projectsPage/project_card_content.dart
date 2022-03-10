@@ -24,14 +24,16 @@ class ProjectCardContent extends StatelessWidget {
     }
 
     return Row(
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        Icon(
-          project['isApp'] ? Icons.smartphone : Icons.language,
-          size: iconSize,
-          color: Colors.white,
-        ),
-        const SizedBox(
-          width: 10,
+        Container(
+          margin: const EdgeInsets.only(right: 15),
+          width: iconSize + 20,
+          child: Icon(
+            project['isApp'] ? Icons.smartphone : Icons.language,
+            size: iconSize,
+            color: Color.fromARGB(129, 0, 0, 0),
+          ),
         ),
         Expanded(
           child: Column(

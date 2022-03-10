@@ -41,7 +41,7 @@ class DrawerSocialMedia extends StatelessWidget {
               ),
               const SizedBox(width: 10),
               SelectableText(
-                'matheus-figueredo-904a55160/',
+                'matheusfigueredo/',
                 style: GoogleFonts.sanchez(
                   fontSize: 12,
                   color: Colors.white,

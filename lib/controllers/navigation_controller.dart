@@ -18,30 +18,26 @@ class NavigationController {
       case 'Início':
         scrollController.scrollTo(
           index: 0,
-          duration: const Duration(milliseconds: 500),
+          duration: const Duration(milliseconds: 750),
         );
-        currentPageIndex.value = 0;
         break;
       case 'Sobre mim':
         scrollController.scrollTo(
           index: 1,
-          duration: const Duration(milliseconds: 500),
+          duration: const Duration(milliseconds: 750),
         );
-        currentPageIndex.value = 2;
         break;
       case 'Habilidades':
         scrollController.scrollTo(
           index: 2,
-          duration: const Duration(milliseconds: 500),
+          duration: const Duration(milliseconds: 750),
         );
-        currentPageIndex.value = 3;
         break;
       case 'Projetos':
         scrollController.scrollTo(
           index: 3,
-          duration: const Duration(milliseconds: 500),
+          duration: const Duration(milliseconds: 750),
         );
-        currentPageIndex.value = 4;
         break;
     }
   }

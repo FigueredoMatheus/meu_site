@@ -1,3 +1,3 @@
-const double sectionsSpace = 40;
+const double sectionsSpace = 70;
 
-const double titleContextSpace = 25;
+const double titleContextSpace = 50;
