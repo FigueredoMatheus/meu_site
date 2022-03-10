@@ -31,7 +31,7 @@ class LargeInitialTemplate extends StatelessWidget {
                 cardHeight: screenWidth * 0.16 > 185 ? 185 : screenWidth * 0.16,
                 cardWidth: screenWidth * 0.49 > 655 ? 655 : screenWidth * 0.49,
                 textFontSize:
-                    screenWidth * 0.023 > 28 ? 28 : screenWidth * 0.023,
+                    screenWidth * 0.023 > 27 ? 27 : screenWidth * 0.023,
               ),
             ],
           ),

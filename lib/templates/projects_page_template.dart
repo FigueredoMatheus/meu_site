@@ -25,7 +25,7 @@ class ProjectsPageTemplate extends StatelessWidget {
           SelectableText(
             'Projetos',
             style: GoogleFonts.sarabun(
-              fontSize: screenWidth * 0.0833 > 45 ? 45 : screenWidth * 0.0833,
+              fontSize: screenWidth * 0.0833 > 50 ? 50 : screenWidth * 0.0833,
               fontWeight: FontWeight.bold,
               color: Colors.white,
             ),

@@ -24,8 +24,15 @@ class ProjectsPage extends StatelessWidget {
           iconSize: 40,
           textFontSize: screenWidth * 0.0246 > 22 ? 22 : screenWidth * 0.0246,
         );
+      } else {
+        return ProjectsPageTemplate(
+          screenWidth: screenWidth,
+          projectContainerWidth:
+              screenWidth * 0.833 > 1170 ? 1170 : screenWidth * 0.833,
+          iconSize: 50,
+          textFontSize: screenWidth * 0.023 > 27 ? 27 : screenWidth * 0.023,
+        );
       }
-      return Container(color: Colors.red);
     }
 
     return getTemplate();
