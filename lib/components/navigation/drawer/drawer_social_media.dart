@@ -36,7 +36,7 @@ class DrawerSocialMedia extends StatelessWidget {
             children: [
               const SocialMediaIcon(
                 icon: FontAwesomeIcons.linkedinIn,
-                url: 'https://www.linkedin.com/in/matheus-figueredo-904a55160/',
+                url: 'https://www.linkedin.com/in/matheusfigueredo/',
                 isDrawer: true,
               ),
               const SizedBox(width: 10),

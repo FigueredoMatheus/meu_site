@@ -20,11 +20,11 @@ class CardInitialPage extends StatelessWidget {
       padding: const EdgeInsets.all(10),
       decoration: BoxDecoration(
         color: Theme.of(context).primaryColor,
-        boxShadow: const [
+        boxShadow: [
           BoxShadow(
             blurRadius: 4,
-            offset: Offset(5, 7),
-            color: Colors.black,
+            offset: const Offset(4, 4),
+            color: Colors.black.withOpacity(0.6),
           ),
         ],
       ),

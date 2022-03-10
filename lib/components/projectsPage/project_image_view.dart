@@ -22,12 +22,12 @@ class _ImagesViewState extends State<ImagesView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).primaryColor.withOpacity(0.5),
+        backgroundColor: Theme.of(context).primaryColor.withOpacity(0.9),
         elevation: 0,
       ),
       bottomNavigationBar: Container(
         height: 50,
-        color: Theme.of(context).primaryColor.withOpacity(0.5),
+        color: Theme.of(context).primaryColor.withOpacity(0.9),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -62,26 +62,31 @@ class _ImagesViewState extends State<ImagesView> {
           ],
         ),
       ),
-      body: Stack(
-        alignment: Alignment.bottomLeft,
-        children: [
-          PhotoViewGallery.builder(
-            itemCount: widget.imagesList.length,
-            pageController: widget.pageController,
-            onPageChanged: (index) => setState(() => this.index = index),
-            backgroundDecoration: BoxDecoration(
-              color: Theme.of(context).primaryColor.withOpacity(0.5),
-            ),
-            builder: (context, index) {
-              String imagePath = widget.imagesList[index];
+      body: Container(
+        color: Theme.of(context).primaryColor.withOpacity(0.9),
+        padding: const EdgeInsets.all(30),
+        child: Stack(
+          alignment: Alignment.bottomLeft,
+          children: [
+            PhotoViewGallery.builder(
+              itemCount: widget.imagesList.length,
+              pageController: widget.pageController,
+              onPageChanged: (index) => setState(() => this.index = index),
+              enableRotation: false,
+              backgroundDecoration: BoxDecoration(
+                color: Theme.of(context).primaryColor.withOpacity(0.05),
+              ),
+              builder: (context, index) {
+                String imagePath = widget.imagesList[index];
 
-              return PhotoViewGalleryPageOptions(
-                imageProvider: NetworkImage(imagePath),
-                minScale: PhotoViewComputedScale.contained,
-              );
-            },
-          ),
-        ],
+                return PhotoViewGalleryPageOptions(
+                  imageProvider: NetworkImage(imagePath),
+                  minScale: PhotoViewComputedScale.contained,
+                );
+              },
+            ),
+          ],
+        ),
       ),
     );
   }

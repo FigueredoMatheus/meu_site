@@ -50,7 +50,7 @@ class Profile extends StatelessWidget {
             SizedBox(width: 35),
             SocialMediaIcon(
               icon: FontAwesomeIcons.linkedinIn,
-              url: 'https://www.linkedin.com/in/matheus-figueredo-904a55160/',
+              url: 'https://www.linkedin.com/in/matheusfigueredo/',
             ),
             SizedBox(width: 35),
             SocialMediaIcon(

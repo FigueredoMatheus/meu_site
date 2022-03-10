@@ -44,13 +44,13 @@ class ProjectCardContent extends StatelessWidget {
                 style: textStyle(),
               ),
               const SizedBox(
-                height: 10,
+                height: 20,
               ),
               Column(
                 children: List.generate(
                   project['accessLink'].length,
                   (index) => Container(
-                    margin: const EdgeInsets.only(bottom: 5),
+                    margin: const EdgeInsets.only(bottom: 10),
                     child: Row(
                       children: [
                         const Icon(

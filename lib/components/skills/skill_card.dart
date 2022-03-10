@@ -52,11 +52,11 @@ class _SkillCardState extends State<SkillCard> {
         decoration: BoxDecoration(
           color: Theme.of(context).primaryColor,
           borderRadius: BorderRadius.circular(5),
-          boxShadow: const [
+          boxShadow: [
             BoxShadow(
               blurRadius: 4,
-              offset: Offset(5, 7),
-              color: Colors.black,
+              offset: const Offset(4, 4),
+              color: Colors.black.withOpacity(0.6),
             ),
           ],
         ),

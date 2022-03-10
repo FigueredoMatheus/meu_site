@@ -20,9 +20,9 @@ class ProjectsPage extends StatelessWidget {
         return ProjectsTemplate(
           screenWidth: screenWidth,
           projectContainerWidth:
-              screenWidth * 0.83 > 550 ? 550 : screenWidth * 0.83,
-          iconSize: 30,
-          textFontSize: screenWidth * 0.0333 > 16 ? 16 : screenWidth * 0.0333,
+              screenWidth * 0.833 > 750 ? 750 : screenWidth * 0.833,
+          iconSize: 40,
+          textFontSize: screenWidth * 0.0246 > 22 ? 22 : screenWidth * 0.0246,
         );
       }
       return Container(color: Colors.red);

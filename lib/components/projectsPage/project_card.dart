@@ -22,7 +22,7 @@ class ProjectCard extends StatelessWidget {
           return Container(
             width: projectContainerWidth,
             margin: const EdgeInsets.only(bottom: 20),
-            padding: const EdgeInsets.all(10),
+            padding: const EdgeInsets.all(15),
             decoration: BoxDecoration(
               color: Theme.of(context).primaryColor,
               borderRadius: BorderRadius.circular(5),
