@@ -3,12 +3,12 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:meu_site/components/projectsPage/project_card.dart';
 import 'package:meu_site/constants/constant_spacing.dart';
 
-class ProjectsTemplate extends StatelessWidget {
+class ProjectsPageTemplate extends StatelessWidget {
   final double screenWidth;
   final double projectContainerWidth;
   final double iconSize;
   final double textFontSize;
-  const ProjectsTemplate({
+  const ProjectsPageTemplate({
     Key? key,
     required this.screenWidth,
     required this.projectContainerWidth,
@@ -25,7 +25,7 @@ class ProjectsTemplate extends StatelessWidget {
           SelectableText(
             'Projetos',
             style: GoogleFonts.sarabun(
-              fontSize: screenWidth * 0.0833 > 45 ? 45 : screenWidth * 0.0833,
+              fontSize: screenWidth * 0.0833 > 50 ? 50 : screenWidth * 0.0833,
               fontWeight: FontWeight.bold,
               color: Colors.white,
             ),
