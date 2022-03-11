@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -37,6 +39,7 @@ class Profile extends StatelessWidget {
           style: GoogleFonts.sanchez(
             fontSize: nameFontSize,
             color: Colors.white,
+            height: 1.2,
           ),
         ),
         const SizedBox(height: 20),
