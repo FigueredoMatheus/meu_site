@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:meu_site/controllers/navigation_controller.dart';
 
 class SkillCard extends StatefulWidget {
   final double containerWidth;
@@ -24,7 +25,7 @@ class SkillCard extends StatefulWidget {
 class _SkillCardState extends State<SkillCard> {
   double _levelBarWidth = 0;
   Color _levelBarColor = Colors.white;
-  double levelColorsInterval = 150 / 5;
+  late double levelColorsInterval;
 
   final List<Color> colors = const [
     Color(0xFFE42500),
@@ -34,82 +35,86 @@ class _SkillCardState extends State<SkillCard> {
     Color(0xFF00AA02),
   ];
 
-  animatedLevelBar() {
-    setState(() {
-      _levelBarWidth = widget.skill['level'] * 30;
-      _levelBarColor =
-          colors[(_levelBarWidth / levelColorsInterval).round() - 1];
-    });
+  @override
+  void initState() {
+    super.initState();
+    levelColorsInterval = widget.containerWidth / 5;
   }
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: () => animatedLevelBar(),
-      child: Container(
-        width: widget.containerWidth,
-        height: widget.containerHeight,
-        decoration: BoxDecoration(
-          color: Theme.of(context).primaryColor,
-          borderRadius: BorderRadius.circular(5),
-          boxShadow: [
-            BoxShadow(
-              blurRadius: 4,
-              offset: const Offset(4, 4),
-              color: Colors.black.withOpacity(0.6),
-            ),
-          ],
-        ),
-        child: Stack(
-          alignment: Alignment.center,
-          children: [
-            Positioned(
-              top: 20,
-              child: Image.asset(
-                widget.skill['logoPath'],
-                width: widget.logoSize,
-                height: widget.logoSize,
-              ),
-            ),
-            Positioned(
-              bottom: 20,
-              child: Text(
-                widget.skill['title'],
-                style: GoogleFonts.sarabun(
-                  color: Colors.white,
-                  fontSize: widget.titleFontSize,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
-            Positioned(
-              bottom: 0,
-              child: Container(
-                width: widget.containerWidth,
-                height: 10,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(2),
-                ),
-              ),
-            ),
-            Positioned(
-              bottom: 0,
-              child: AnimatedContainer(
-                duration: const Duration(seconds: 1),
-                curve: Curves.easeOutQuad,
-                //Curves.decelerate,
-                width: _levelBarWidth,
-                height: 10,
-                decoration: BoxDecoration(
-                  color: _levelBarColor,
-                  borderRadius: BorderRadius.circular(2),
-                ),
-              ),
-            ),
-          ],
-        ),
+    final navigationController = NavigationController();
+    return Container(
+      width: widget.containerWidth,
+      height: widget.containerHeight,
+      decoration: BoxDecoration(
+        color: Theme.of(context).primaryColor,
+        borderRadius: BorderRadius.circular(5),
+        boxShadow: [
+          BoxShadow(
+            blurRadius: 4,
+            offset: const Offset(4, 4),
+            color: Colors.black.withOpacity(0.6),
+          ),
+        ],
       ),
+      child: ValueListenableBuilder(
+          valueListenable: navigationController.currentPageIndex,
+          builder: (_, __, ___) {
+            return Stack(
+              alignment: Alignment.center,
+              children: [
+                Positioned(
+                  top: 20,
+                  child: Image.asset(
+                    widget.skill['logoPath'],
+                    width: widget.logoSize,
+                    height: widget.logoSize,
+                  ),
+                ),
+                Positioned(
+                  bottom: 20,
+                  child: Text(
+                    widget.skill['title'],
+                    style: GoogleFonts.sarabun(
+                      color: Colors.white,
+                      fontSize: widget.titleFontSize,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+                Positioned(
+                  bottom: 0,
+                  child: Container(
+                    width: widget.containerWidth,
+                    height: 10,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(2),
+                    ),
+                  ),
+                ),
+                Positioned(
+                  bottom: 0,
+                  left: 0,
+                  child: AnimatedContainer(
+                    duration: const Duration(seconds: 1),
+                    curve: Curves.decelerate,
+                    width: navigationController.currentPageIndex.value == 2
+                        ? widget.skill['level'] * levelColorsInterval
+                        : 0,
+                    height: 10,
+                    decoration: BoxDecoration(
+                      color: navigationController.currentPageIndex.value == 2
+                          ? colors[widget.skill['level'] - 1]
+                          : Colors.white,
+                      borderRadius: BorderRadius.circular(2),
+                    ),
+                  ),
+                ),
+              ],
+            );
+          }),
     );
   }
 }
