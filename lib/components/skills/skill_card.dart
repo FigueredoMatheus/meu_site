@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:meu_site/controllers/animation_controller.dart';
 import 'package:meu_site/controllers/navigation_controller.dart';
 
 class SkillCard extends StatefulWidget {
@@ -43,7 +44,7 @@ class _SkillCardState extends State<SkillCard> {
 
   @override
   Widget build(BuildContext context) {
-    final navigationController = NavigationController();
+    final appAnimationController = AppAnimationController();
     return Container(
       width: widget.containerWidth,
       height: widget.containerHeight,
@@ -59,7 +60,7 @@ class _SkillCardState extends State<SkillCard> {
         ],
       ),
       child: ValueListenableBuilder(
-          valueListenable: navigationController.currentPageIndex,
+          valueListenable: appAnimationController.showSkillAnimation,
           builder: (_, __, ___) {
             return Stack(
               alignment: Alignment.center,
@@ -100,12 +101,12 @@ class _SkillCardState extends State<SkillCard> {
                   child: AnimatedContainer(
                     duration: const Duration(seconds: 1),
                     curve: Curves.decelerate,
-                    width: navigationController.currentPageIndex.value == 2
+                    width: appAnimationController.showSkillAnimation.value
                         ? widget.skill['level'] * levelColorsInterval
                         : 0,
                     height: 10,
                     decoration: BoxDecoration(
-                      color: navigationController.currentPageIndex.value == 2
+                      color: appAnimationController.showSkillAnimation.value
                           ? colors[widget.skill['level'] - 1]
                           : Colors.white,
                       borderRadius: BorderRadius.circular(2),

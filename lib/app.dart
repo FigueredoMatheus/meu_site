@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:meu_site/components/navigation/navigation_bar.dart';
 import 'package:meu_site/components/navigation/drawer/navigation_drawer.dart';
 import 'package:meu_site/app_views.dart';
+import 'package:meu_site/controllers/animation_controller.dart';
 import 'package:meu_site/controllers/navigation_controller.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
@@ -15,12 +16,26 @@ class App extends StatefulWidget {
 class _AppState extends State<App> {
   final itemListener = ItemPositionsListener.create();
   final navigationController = NavigationController();
+  final appAnimationController = AppAnimationController();
 
   @override
   void initState() {
     super.initState();
     itemListener.itemPositions.addListener(
       () {
+        itemListener.itemPositions.value.where((item) {
+          print('Index: ${item.index}');
+          print('---Leading: ${item.itemLeadingEdge}');
+          if (item.index == 2 && item.itemLeadingEdge < 0.5) {
+            appAnimationController.showSkillAnimation.value = true;
+          }
+
+          if (item.index == 3 && item.itemLeadingEdge < 0.7) {
+            appAnimationController.showSkillAnimation.value = true;
+          }
+          return true;
+        }).toList();
+
         itemListener.itemPositions.value.where((item) {
           final isTopVisible =
               item.itemLeadingEdge >= -0.6 && item.itemLeadingEdge <= 0.2;

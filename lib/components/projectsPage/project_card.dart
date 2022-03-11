@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:meu_site/components/projectsPage/project_card_content.dart';
 import 'package:meu_site/constants/projects.dart';
+import 'package:meu_site/controllers/navigation_controller.dart';
 
 class ProjectCard extends StatelessWidget {
   final double projectContainerWidth;

@@ -10,6 +10,7 @@ class NavigationController {
   }
 
   NavigationController._internal();
+
   ValueNotifier<int> currentPageIndex = ValueNotifier(0);
   final scrollController = ItemScrollController();
 
