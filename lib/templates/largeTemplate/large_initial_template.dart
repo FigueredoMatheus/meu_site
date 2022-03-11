@@ -28,7 +28,7 @@ class LargeInitialTemplate extends StatelessWidget {
                 width: screenWidth * 0.116 > 190 ? 190 : screenWidth * 0.116,
               ),
               CardInitialPage(
-                cardHeight: screenWidth * 0.16 > 185 ? 185 : screenWidth * 0.16,
+                cardHeight: screenWidth * 0.16 > 150 ? 150 : screenWidth * 0.16,
                 cardWidth: screenWidth * 0.49 > 655 ? 655 : screenWidth * 0.49,
                 textFontSize:
                     screenWidth * 0.023 > 27 ? 27 : screenWidth * 0.023,

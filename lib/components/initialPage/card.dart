@@ -30,7 +30,7 @@ class CardInitialPage extends StatelessWidget {
       ),
       child: Center(
         child: SelectableText(
-          'Granduando em Engenharia de Computação na Universidade Federal do Vale do São Francisco',
+          'Desenvolvedor front-end & estudante de Engenharia de Computação',
           textAlign: TextAlign.center,
           style: GoogleFonts.sanchez(
             fontSize: textFontSize,
