@@ -10,9 +10,7 @@ class InitialPage extends StatelessWidget {
     final screenWidth = MediaQuery.of(context).size.width;
 
     Widget getTemplate() {
-      if (screenWidth <= 650) {
-        return InitalPageTemplate(screenWidth: screenWidth);
-      } else if (screenWidth <= 950) {
+      if (screenWidth <= 950) {
         return InitalPageTemplate(screenWidth: screenWidth);
       } else {
         return LargeInitialTemplate(screenWidth: screenWidth);
