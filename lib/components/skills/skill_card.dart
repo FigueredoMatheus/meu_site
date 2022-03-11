@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:meu_site/controllers/animation_controller.dart';
-import 'package:meu_site/controllers/navigation_controller.dart';
 
 class SkillCard extends StatefulWidget {
   final double containerWidth;
@@ -24,8 +23,6 @@ class SkillCard extends StatefulWidget {
 }
 
 class _SkillCardState extends State<SkillCard> {
-  double _levelBarWidth = 0;
-  Color _levelBarColor = Colors.white;
   late double levelColorsInterval;
 
   final List<Color> colors = const [

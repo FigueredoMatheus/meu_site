@@ -24,8 +24,6 @@ class _AppState extends State<App> {
     itemListener.itemPositions.addListener(
       () {
         itemListener.itemPositions.value.where((item) {
-          print('Index: ${item.index}');
-          print('---Leading: ${item.itemLeadingEdge}');
           if (item.index == 2 && item.itemLeadingEdge < 0.5) {
             appAnimationController.showSkillAnimation.value = true;
           }
@@ -54,7 +52,6 @@ class _AppState extends State<App> {
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
 
-    print('screenWidth: $screenWidth');
     return Scaffold(
       appBar: screenWidth <= 650
           ? AppBar(

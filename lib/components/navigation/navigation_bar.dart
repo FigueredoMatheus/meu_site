@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:meu_site/components/navigation/appBar_link.dart';
+import 'package:meu_site/components/navigation/app_bar_link.dart';
 import 'package:meu_site/constants/app_navigation_links.dart';
 
 class NavigationAppBar extends StatelessWidget implements PreferredSizeWidget {
