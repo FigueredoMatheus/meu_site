@@ -38,10 +38,9 @@ class ProjectCardContent extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
+              SelectableText(
                 project['description'],
                 textAlign: TextAlign.justify,
-                overflow: TextOverflow.visible,
                 style: textStyle(),
               ),
               const SizedBox(
