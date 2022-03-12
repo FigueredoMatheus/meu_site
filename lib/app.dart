@@ -5,6 +5,7 @@ import 'package:meu_site/app_views.dart';
 import 'package:meu_site/controllers/animation_controller.dart';
 import 'package:meu_site/controllers/navigation_controller.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
+import 'package:particles_flutter/particles_flutter.dart';
 
 class App extends StatefulWidget {
   const App({Key? key}) : super(key: key);
@@ -51,7 +52,7 @@ class _AppState extends State<App> {
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
-
+    final screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
       appBar: screenWidth <= 650
           ? AppBar(
@@ -71,13 +72,32 @@ class _AppState extends State<App> {
             ],
           ),
         ),
-        child: ScrollablePositionedList.builder(
-          itemCount: 5,
-          itemPositionsListener: itemListener,
-          itemScrollController: navigationController.scrollController,
-          itemBuilder: (context, index) {
-            return appViews[index];
-          },
+        child: Stack(
+          children: [
+            CircularParticle(
+              width: screenWidth,
+              height: screenHeight,
+              awayRadius: screenWidth / 5,
+              numberOfParticles: 100,
+              speedOfParticles: 1.5,
+              maxParticleSize: 7,
+              particleColor: Colors.white.withOpacity(.1),
+              awayAnimationDuration: const Duration(milliseconds: 600),
+              awayAnimationCurve: Curves.easeInOutBack,
+              onTapAnimation: true,
+              isRandSize: true,
+              isRandomColor: false,
+              connectDots: true,
+            ),
+            ScrollablePositionedList.builder(
+              itemCount: 5,
+              itemPositionsListener: itemListener,
+              itemScrollController: navigationController.scrollController,
+              itemBuilder: (context, index) {
+                return appViews[index];
+              },
+            ),
+          ],
         ),
       ),
     );
