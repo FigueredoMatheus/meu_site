@@ -75,6 +75,7 @@ class _AppState extends State<App> {
         child: Stack(
           children: [
             CircularParticle(
+              key: UniqueKey(),
               width: screenWidth,
               height: screenHeight,
               awayRadius: screenWidth / 5,
