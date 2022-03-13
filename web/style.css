@@ -1,0 +1,21 @@
+
+html, body {
+    height: 100vh;
+    margin: 0;
+    background-color: #1E2A50;
+    overflow: hidden;
+}
+
+#animContainer{
+    height: 50vh;
+    width: 50vw;
+}
+
+.center {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
