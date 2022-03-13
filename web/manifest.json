@@ -1,11 +1,11 @@
 {
-    "name": "meu_site",
-    "short_name": "meu_site",
+    "name": "Matheus F. B. - Portfólio",
+    "short_name": "Matheus F. B. - Portfólio",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Desenvolvedor frond-end (apps e websites). Conheça um pouco sobre mim.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
