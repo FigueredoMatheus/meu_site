@@ -16,10 +16,11 @@ class ProjectCardContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    TextStyle textStyle() {
+    TextStyle textStyle({bool isLink = false}) {
       return GoogleFonts.sanchez(
         color: Colors.white,
         fontSize: textFontSize,
+        decoration: isLink ? TextDecoration.underline : null,
       );
     }
 
@@ -67,7 +68,7 @@ class ProjectCardContent extends StatelessWidget {
                                 'https://' + project['accessLink'][index]),
                             child: Text(
                               project['accessLink'][index],
-                              style: textStyle(),
+                              style: textStyle(isLink: true),
                             ),
                           ),
                         ),
