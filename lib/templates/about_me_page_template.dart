@@ -25,7 +25,7 @@ class AboutMePageTemplate extends StatelessWidget {
           SizedBox(
             width: screenWidth * 0.833 > 1170 ? 1170 : screenWidth * 0.833,
             child: SelectableText(
-              'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+              'Eu sou o Matheus, piauiense, 24 anos, desenvolvedor front-end e cursando Engenharia de Computação (pretensão de conclusão em 2023). Tenho 2 anos de experiência, tendo trabalhado boa parte da minha carreira utilizando o framework Flutter, mas atualmente também estou desenvolvendo com ReactJs, Javascript, Bootstrap, HTML e CSS. Minha trajetória na programação teve início em 2014, através do Pronatec (programa do governo federal), e desde então sou apaixonado por essa área.',
               textAlign: TextAlign.justify,
               style: GoogleFonts.sanchez(
                 color: Colors.white,
