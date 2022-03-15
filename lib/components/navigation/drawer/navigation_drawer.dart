@@ -17,9 +17,13 @@ class NavigationDrawer extends StatelessWidget {
             const SizedBox(
               height: 20,
             ),
-            const CircleAvatar(
+            CircleAvatar(
               radius: 50,
-              backgroundColor: Colors.grey,
+              backgroundColor: Colors.transparent,
+              child: Image.asset(
+                'assets/icon.png',
+                fit: BoxFit.cover,
+              ),
             ),
             const SizedBox(
               height: 40,
