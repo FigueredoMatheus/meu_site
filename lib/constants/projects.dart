@@ -21,7 +21,7 @@ List<Map<String, dynamic>> projects = [
     ],
     'accessLink': ['www.ayanengenharia.com', 'www.ayanengenharia.com.br'],
     'description':
-        'Desenvolvimento do site feito em Flutter com Firebase (hosting, Cloud Firestore e storage), prototipado utilizando Figma e Git para controle de versões.',
+        'Desenvolvimento do site feito em Flutter com Firebase (Hosting, Cloud Firestore e Storage), prototipado utilizando Figma e Git para controle de versões.',
   },
   {
     'isApp': true,
