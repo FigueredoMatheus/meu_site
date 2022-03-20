@@ -54,6 +54,7 @@ class _AppState extends State<App> {
     final screenWidth = MediaQuery.of(context).size.width;
     final screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
+      extendBodyBehindAppBar: true,
       appBar: screenWidth <= 650
           ? AppBar(
               backgroundColor: Theme.of(context).primaryColor,
