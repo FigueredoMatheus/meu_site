@@ -40,7 +40,6 @@ dependencies:
   flutter_svg: ^1.0.3
   scrollable_positioned_list: ^0.2.3
   photo_view: ^0.13.0
-  flutter_modular: ^4.5.0
   url_strategy: ^0.2.0
   particles_flutter: ^0.1.4
 

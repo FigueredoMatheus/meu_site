@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:meu_site/app.dart';
-import 'package:meu_site/routes/app_module.dart';
 import 'package:url_strategy/url_strategy.dart';
-import 'package:flutter_modular/flutter_modular.dart';
 
 void main() {
   setPathUrlStrategy();
-  runApp(ModularApp(module: AppModule(), child: const MyApp()));
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
