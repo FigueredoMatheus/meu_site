@@ -3,6 +3,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:meu_site/components/social_media_icon.dart';
 import 'package:meu_site/constants/constant_spacing.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class FooterPageTemplate extends StatelessWidget {
   final double screenWidth;
@@ -41,7 +42,7 @@ class FooterPageTemplate extends StatelessWidget {
           SizedBox(
             width: screenWidth * 0.83,
             child: Text(
-              'copyright © 2022 Matheus Figueredo. Todos os direitos reservados.',
+              AppLocalizations.of(context)!.footerText,
               textAlign: TextAlign.center,
               style: GoogleFonts.sanchez(
                 fontSize: 14,

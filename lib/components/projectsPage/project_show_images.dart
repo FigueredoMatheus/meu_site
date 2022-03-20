@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:meu_site/components/projectsPage/project_image_view.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class ProjectShowImages extends StatelessWidget {
   final List<String> imagesList;
@@ -24,9 +25,9 @@ class ProjectShowImages extends StatelessWidget {
             ),
           );
         },
-        child: const Text(
-          'Imagens',
-          style: TextStyle(
+        child: Text(
+          AppLocalizations.of(context)!.imagesButtonText,
+          style: const TextStyle(
             color: Colors.black,
             fontSize: 12,
           ),

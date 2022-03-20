@@ -20,7 +20,7 @@ class DrawerListTile extends StatelessWidget {
       builder: (context, _, __) {
         return ListTile(
           onTap: () {
-            navigationController.scrollTo(title);
+            navigationController.scrollTo(pageIndex);
             Navigator.pop(context);
           },
           title: Text(

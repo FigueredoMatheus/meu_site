@@ -29,7 +29,7 @@ class _AppBarLinkState extends State<AppBarLink> {
         splashColor: Colors.transparent,
         highlightColor: Colors.transparent,
         onTap: () {
-          navigationController.scrollTo(widget.linkText);
+          navigationController.scrollTo(widget.pageIndex);
         },
         onHover: (value) => setState(() {
           _isHovering = !_isHovering;

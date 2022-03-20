@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:meu_site/components/projectsPage/project_show_images.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class ProjectCardContent extends StatelessWidget {
   final Map<String, dynamic> project;
@@ -16,6 +17,19 @@ class ProjectCardContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    String getProjectDescription(int projectIndex) {
+      switch (project['projectIndex']) {
+        case 0:
+          return AppLocalizations.of(context)!.project1;
+        case 1:
+          return AppLocalizations.of(context)!.project2;
+        case 2:
+          return AppLocalizations.of(context)!.project3;
+        default:
+          return '';
+      }
+    }
+
     TextStyle textStyle({bool isLink = false}) {
       return GoogleFonts.sanchez(
         color: Colors.white,
@@ -40,7 +54,7 @@ class ProjectCardContent extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SelectableText(
-                project['description'],
+                getProjectDescription(project['projectIndex']),
                 textAlign: TextAlign.justify,
                 style: textStyle(),
               ),

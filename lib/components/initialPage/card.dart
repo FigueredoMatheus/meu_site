@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class CardInitialPage extends StatelessWidget {
   final double cardWidth;
@@ -30,7 +31,7 @@ class CardInitialPage extends StatelessWidget {
       ),
       child: Center(
         child: SelectableText(
-          'Desenvolvedor front-end & estudante de Engenharia de Computação',
+          AppLocalizations.of(context)!.homeCardText,
           textAlign: TextAlign.center,
           style: GoogleFonts.sanchez(
             fontSize: textFontSize,

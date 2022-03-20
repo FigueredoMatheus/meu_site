@@ -1,0 +1,14 @@
+{
+    "language": "English",
+     "linkBar1": "Home",
+    "linkBar2": "About Me",
+    "linkBar3": "Skills",
+    "linkBar4": "Projects",
+    "homeCardText": "Front-end developer & Computer Engineering student.",
+    "aboutMe": "I'm Matheus, from Piauí, 24 years old, front-end developer and studying Computer Engineering (completion planned for 2023). I have 2 years of experience, having worked most of my career using the Flutter framework, but currently I'm also developing with ReactJs, Javascript, Bootstrap, HTML and CSS. My trajectory in programming began in 2014, through Pronatec (a federal government program), and since then I have been passionate about this area.",
+    "project1": "Development of an interactive book reader application for android using Flutter with Firebase (Auth, Cloud Firestore, Storage, Dynamic Links and Google Admob), login with Google, Facebook and Email. In addition, Scrum was used for teamwork and Git for version control.",
+    "project2": "Website developed using Flutter with Firebase (Hosting, Cloud Firestore and Storage). Prototype using Figma and Git for version control.",
+    "project3": "App developed using Flutter about Ecological Footprint. It is shown what it is and it is also possible to calculate your Ecological Footprint. Git was used for version control.",
+    "imagesButtonText": "Images",
+    "footerText": "copyright © 2022 Matheus Figueredo. All rights reserved"   
+}

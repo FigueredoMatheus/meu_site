@@ -8,8 +8,7 @@ List<Map<String, dynamic>> projects = [
       'assets/projects/Nix app/book-page.jpeg'
     ],
     'accessLink': ['play.google.com/store/apps/details?id=com.guinter.nix'],
-    'description':
-        'Desenvolvimento de um aplicativo leitor de livros interativos para android utilizando Flutter com Firebase (Auth, Cloud Firestore, Storage, Dynamic Links e Google Admob), possui login com Google, Facebook e Email.  Além disso, foi utilizado o Scrum para trabalho em equipe e Git para controle de versões.',
+    'projectIndex': 0,
   },
   {
     'isApp': false,
@@ -20,8 +19,7 @@ List<Map<String, dynamic>> projects = [
       'assets/projects/Engineer site/contact-page.png',
     ],
     'accessLink': ['www.ayanengenharia.com', 'www.ayanengenharia.com.br'],
-    'description':
-        'Desenvolvimento do site feito em Flutter com Firebase (Hosting, Cloud Firestore e Storage), prototipado utilizando Figma e Git para controle de versões.',
+    'projectIndex': 1,
   },
   {
     'isApp': true,
@@ -32,7 +30,6 @@ List<Map<String, dynamic>> projects = [
       'assets/projects/Ecological Footprint/about-footprint-page.jpeg',
     ],
     'accessLink': ['escolaverde.org/site/?p=70464'],
-    'description':
-        'Desenvolvimento de um aplicativo, em Flutter, sobre Pegada Ecológica. É mostrado o que é e também é possível fazer o cálculo da sua Pegada Ecológica. Foi utilizado Git para controle de versões.',
+    'projectIndex': 2,
   },
 ];
