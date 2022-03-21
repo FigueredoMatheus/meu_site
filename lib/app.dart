@@ -1,16 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:meu_site/components/language_option_container.dart';
 import 'package:meu_site/components/navigation/navigation_bar.dart';
 import 'package:meu_site/components/navigation/drawer/navigation_drawer.dart';
 import 'package:meu_site/app_views.dart';
 import 'package:meu_site/controllers/animation_controller.dart';
-import 'package:meu_site/controllers/locale_controller.dart';
 import 'package:meu_site/controllers/navigation_controller.dart';
-import 'package:provider/provider.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 import 'package:particles_flutter/particles_flutter.dart';
-import 'package:meu_site/l10n/l10n.dart';
 
 class App extends StatefulWidget {
   const App({Key? key}) : super(key: key);
