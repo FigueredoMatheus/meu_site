@@ -44,4 +44,9 @@ List<Map<String, dynamic>> skillsList = [
     'logoPath': 'assets/skills logo/git-logo70.png',
     'level': 4,
   },
+  {
+    'title': 'MySQL',
+    'logoPath': 'assets/skills logo/MySQL-logo70.png',
+    'level': 3,
+  },
 ];
