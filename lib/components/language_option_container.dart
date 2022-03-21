@@ -44,7 +44,7 @@ class LanguageOptionContainer extends StatelessWidget {
             ),
           ),
           const SizedBox(
-            width: 5,
+            width: 10,
           ),
           InkWell(
             onTap: () {
