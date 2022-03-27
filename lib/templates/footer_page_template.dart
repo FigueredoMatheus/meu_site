@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:meu_site/components/social_media_icon.dart';
+import 'package:meu_site/widgets/social_media_icon.dart';
 import 'package:meu_site/constants/constant_spacing.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 

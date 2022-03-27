@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:meu_site/components/initialPage/card.dart';
-import 'package:meu_site/components/initialPage/profile.dart';
+import 'package:meu_site/widgets/initialPage/card.dart';
+import 'package:meu_site/widgets/initialPage/profile.dart';
 import 'package:meu_site/constants/constant_spacing.dart';
 
 class InitalPageTemplate extends StatelessWidget {

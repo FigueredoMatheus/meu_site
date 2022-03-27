@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:meu_site/components/language_option_container.dart';
-import 'package:meu_site/components/navigation/app_bar_link.dart';
+import 'package:meu_site/widgets/language_option_container.dart';
+import 'package:meu_site/widgets/navigation/app_bar_link.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class NavigationAppBar extends StatelessWidget implements PreferredSizeWidget {

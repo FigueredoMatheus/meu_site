@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:meu_site/components/projectsPage/project_card.dart';
+import 'package:meu_site/widgets/projectsPage/project_card.dart';
 import 'package:meu_site/constants/constant_spacing.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 

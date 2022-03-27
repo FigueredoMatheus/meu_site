@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:meu_site/components/navigation/drawer/drawer_list_tile.dart';
-import 'package:meu_site/components/navigation/drawer/drawer_social_media.dart';
+import 'package:meu_site/widgets/navigation/drawer/drawer_list_tile.dart';
+import 'package:meu_site/widgets/navigation/drawer/drawer_social_media.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class NavigationDrawer extends StatelessWidget {

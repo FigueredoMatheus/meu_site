@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:meu_site/components/language_option_container.dart';
-import 'package:meu_site/components/navigation/navigation_bar.dart';
-import 'package:meu_site/components/navigation/drawer/navigation_drawer.dart';
+import 'package:meu_site/widgets/language_option_container.dart';
+import 'package:meu_site/widgets/navigation/navigation_bar.dart';
+import 'package:meu_site/widgets/navigation/drawer/navigation_drawer.dart';
 import 'package:meu_site/app_views.dart';
 import 'package:meu_site/controllers/animation_controller.dart';
 import 'package:meu_site/controllers/navigation_controller.dart';

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:meu_site/components/social_media_icon.dart';
+import 'package:meu_site/widgets/social_media_icon.dart';
 
 class Profile extends StatelessWidget {
   final double nameFontSize;
