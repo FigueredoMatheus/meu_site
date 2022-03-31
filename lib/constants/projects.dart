@@ -32,4 +32,15 @@ List<Map<String, dynamic>> projects = [
     'accessLink': ['escolaverde.org/site/?p=70464'],
     'projectIndex': 2,
   },
+  {
+    'isApp': false,
+    'imgList': [
+      'assets/projects/My portfolio/initial-page.PNG',
+      'assets/projects/My portfolio/aboutMe-page.PNG',
+      'assets/projects/My portfolio/skills-page.PNG',
+      'assets/projects/My portfolio/projects-page.PNG',
+    ],
+    'accessLink': ['www.matheusfb.website'],
+    'projectIndex': 3,
+  },
 ];

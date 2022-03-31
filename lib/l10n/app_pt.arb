@@ -9,6 +9,7 @@
     "project1": "Desenvolvimento de um aplicativo leitor de livros interativos para android usando Flutter com Firebase (Auth, Cloud Firestore, Storage, Dynamic Links e Google Admob), possui login com Google, Facebook e Email. Além disso, foi utilizado o Scrum para trabalho em equipe e Git para controle de versões.",
     "project2": "Website desenvolvido utilizando Flutter com Firebase (Hosting, Cloud Firestore e Storage). Prototipo utilizando Figma e Git para controle de versões.",
     "project3": "App desenvolvido utilizando Flutter sobre Pegada Ecológica. É mostrado o que é e também é possível fazer o cálculo da sua Pegada Ecológica. Foi utilizado Git para controle de versões.",
+    "project4": "Website desenvolvido utilizando Flutter com Firebase (Hosting). Prototipo utilizando Figma e Git para controle de versões.",
     "imagesButtonText": "Imagens",
     "footerText": "copyright © 2022 Matheus Figueredo. Todos os direitos reservados."
 }
