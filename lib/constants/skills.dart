@@ -10,6 +10,11 @@ List<Map<String, dynamic>> skillsList = [
     'level': 3,
   },
   {
+    'title': 'Java',
+    'logoPath': 'assets/skills logo/java-logo70.png',
+    'level': 3,
+  },
+  {
     'title': 'ReactJs',
     'logoPath': 'assets/skills logo/react-logo70.png',
     'level': 2,
