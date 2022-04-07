@@ -27,6 +27,8 @@ class ProjectCardContent extends StatelessWidget {
           return AppLocalizations.of(context)!.project3;
         case 3:
           return AppLocalizations.of(context)!.project4;
+        case 4:
+          return AppLocalizations.of(context)!.project5;
         default:
           return '';
       }

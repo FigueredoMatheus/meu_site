@@ -10,6 +10,7 @@
     "project2": "Website desenvolvido utilizando Flutter com Firebase (Hosting, Cloud Firestore e Storage). Prototipo utilizando Figma e Git para controle de versões.",
     "project3": "App desenvolvido utilizando Flutter sobre Pegada Ecológica. É mostrado o que é e também é possível fazer o cálculo da sua Pegada Ecológica. Foi utilizado Git para controle de versões.",
     "project4": "Website desenvolvido utilizando Flutter com Firebase (Hosting). Prototipo utilizando Figma e Git para controle de versões.",
+    "project5": "Aplicativo desenvolvido em Flutter para busca de gifs. O app consome a API GIPHY. É possível buscar gifs de acordo com sua escolha, salvar localmente gifs como favoritos e vê-los na aba 'Favoritos'. Além disso, você pode compartilhar gifs com seus amigos :)",
     "imagesButtonText": "Imagens",
     "footerText": "copyright © 2022 Matheus Figueredo. Todos os direitos reservados."
 }

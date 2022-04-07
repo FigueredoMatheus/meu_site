@@ -43,4 +43,17 @@ List<Map<String, dynamic>> projects = [
     'accessLink': ['www.matheusfb.website'],
     'projectIndex': 3,
   },
+  {
+    'isApp': true,
+    'imgList': [
+      'assets/projects/Pick Gifs/Home-Page.jpeg',
+      'assets/projects/Pick Gifs/Gif-Full.jpeg',
+      'assets/projects/Pick Gifs/Share-Gif.jpeg',
+      'assets/projects/Pick Gifs/Fav-Gifs.jpeg',
+    ],
+    'accessLink': [
+      'drive.google.com/drive/u/0/folders/1X5wH8VJVarnlxrK4PMzLDuT9X1E_RzLO'
+    ],
+    'projectIndex': 4,
+  },
 ];
